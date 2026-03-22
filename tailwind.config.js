@@ -7,7 +7,7 @@ export default {
         dark: "#1A1A1A",
         accent: "#D4A017",
         red: "#A32020",
-        wood: "#C89B6D",
+        wood: "#D4A017",
         gray: "#3A3A3A",
         turq: "#2FA4A9"
       }
