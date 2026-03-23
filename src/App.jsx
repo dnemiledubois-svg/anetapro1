@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useRef, useEffect, useState } from "react";
-import AudioVisualizer from "./components/AudioVisualizer";
+
 import Navbar from "./components/Navbar";
 
 import Home from "./pages/Home";
@@ -45,11 +45,7 @@ export default function App() {
 
       <audio ref={audioRef} src={track} />
 
-      {analyser && (
-        <div className="fixed inset-0 z-0 opacity-30 pointer-events-none">
-          <AudioVisualizer analyser={analyser} />
-        </div>
-      )}
+      
 
       <Routes>
         <Route path="/" element={<Home />} />
