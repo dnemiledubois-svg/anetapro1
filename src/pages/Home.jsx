@@ -49,10 +49,12 @@ export default function Home() {
   </p>
 
   <audio
-    controls
-    preload="none"
-    className="w-full max-w-md"
-  >
+  controls
+  controlsList="nodownload"
+  onContextMenu={(e) => e.preventDefault()}
+  preload="none"
+  className="w-full max-w-md"
+>
     <source src="/audio/audio1.mp3" type="audio/mpeg" />
     Tu navegador no soporta audio.
   </audio>
